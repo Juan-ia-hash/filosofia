@@ -18,6 +18,16 @@ export default function SlideArt({index,advance}:{index:number;advance:()=>void}
     case 0: return <>
       <div className="cover-art reveal-background"><img src="/images/rousseau.jpg" alt="Retrato grabado de Jean-Jacques Rousseau por David Martin, según Allan Ramsay"/><span className="portrait-arch"/></div>
       <div className="cover-copy"><span className="cover-year" aria-hidden="true">1755</span><div className="small-label reveal-title">Jean-Jacques Rousseau</div>{heading}<div className="gold-rule reveal-concepts"/>{detail}<button className="begin reveal-graphics" onClick={advance}>Comenzar exposición <MoveUpRight size={20}/></button></div>
+      <section className="cover-members" aria-labelledby="members-title">
+        <h2 id="members-title">INTEGRANTES</h2>
+        <ol>
+          <li>Juan Jose Lucas Rojas Quille</li>
+          <li>Adriana Sofía Canales Diaz</li>
+          <li>Antonio Samuel Guerra</li>
+          <li>Alexander Renato Garcia Huaman</li>
+          <li>Isabel Anahí Pillaca Hinostroza</li>
+        </ol>
+      </section>
       <span className="art-caption">David Martin, según Allan Ramsay · Grabado, 1766</span>
     </>;
     case 1: return <><div className="split-scenery"><Landscape kind="peru"/><Landscape kind="city"/></div><div className="question-copy">{heading}<span className="question-rule reveal-graphics"/></div></>;
